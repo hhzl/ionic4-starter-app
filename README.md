@@ -11,6 +11,8 @@ Find more Ionic 4 tutorials and starter apps in https://ionicthemes.com
 
 ### Install this Ionic 4 starter app
 ```
+git clone https://github.com/hhzl/ionic4-starter-app.git
+cd ionic4-starter-app/
 npm install
 ```
 
