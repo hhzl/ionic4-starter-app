@@ -7,6 +7,11 @@ This repo is the code of an Ionic 4 starter app that we created as part of a *Ge
 
 - [English tutorial](https://ionicthemes.com/tutorials/about/ionic-4-vs-ionic-3)
 
+
+The Ionic Framework 4 has been completely rebuilt from the ground up using standard Web APIs, and each component is packaged up as a Web Component.
+
+This allows Ionic framework to be projected into the future by relying only on the APIs browsers support natively and also keeping the public API for each component stable. 
+
 Find more Ionic 4 tutorials and starter apps in https://ionicthemes.com
 
 ### Install this Ionic 4 starter app
