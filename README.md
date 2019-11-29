@@ -21,11 +21,29 @@ ionic serve
 ### Demo
 https://www.youtube.com/watch?v=COTmXyXg5rU
 
-### Get a premium Ionic 4 Starter App
-Did you know that we recently released [Ionic 4 Full Starter App](https://ionicthemes.com/product/ionic4-full-starter-app)? It's an ionic 4 template that you can use to jump start your Ionic app development and save yourself hundreds of hours of design and development.
+### Environment check
 
-It is also a PWA and has a score of 100 in lighthouse. Try it on your phone as a PWA to see the magic!
+Check environment and if necessary update
 
-It also has lots of forms and validations examples.
+    ionic info
 
-<img src="https://s3-us-west-2.amazonaws.com/ionicthemes/cover_images/redesign/ionic4-full-starter-app.jpg"/>
+    Ionic CLI : 5.2.0
+
+    Utility:
+
+       cordova-res : not installed
+       native-run  : 0.2.9 
+
+    System:
+
+       NodeJS : v10.17.0
+       npm    : 6.11.3
+       OS     : Linux 4.15
+
+
+  ─────────────────────────────────────
+
+     Update available: 5.2.0 → 5.4.9
+      Run npm i -g ionic to update
+
+  ─────────────────────────────────────
