@@ -21,7 +21,7 @@ npm install
 ionic serve
 ```
 
-<img src="https://github.com/hhzl/ionic4-starter-app/ionic4-starter-app_Home_screenshot.png"/>
+![Home page](ionic4-starter-app_Home_screenshot.png)
 
 ### Demo
 https://www.youtube.com/watch?v=COTmXyXg5rU
