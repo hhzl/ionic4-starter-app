@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ItemService {
 
-  items: Array<any> = [
+  db = {"items": [
     {
       'id': "1",
       'title': "Example 1",
@@ -25,21 +25,30 @@ export class ItemService {
       'id': "4",
       'title': "Example 4",
       'description': 'description 4'
-    },
-    {
-      'id': "5",
-      'title': "Need a more complex app?",
-      'description': 'Check the Ionic 4 Full Starter App.'
     }
   ]
+  };
 
-  constructor() { }
+  storageKey = 'theToDoList';
+
+  constructor() { this.initialize()}
+
+
+
+  initialize() { 
+
+  if (!localStorage.getItem(this.storageKey)) {
+       localStorage.setItem(this.storageKey,JSON.stringify(this.db));
+     } else
+     { this.db = JSON.parse(localStorage.getItem(this.storageKey));}
+  }
+
 
   createItem(title, description){
 
     let randomId = Math.random().toString(36).substr(2, 5);
 
-    this.items.push({
+    this.db.items.push({
       'id': randomId,
       'title': title,
       'description': description
@@ -47,15 +56,17 @@ export class ItemService {
   }
 
   getItems(){
-    return this.items;
+    return this.db.items;
   }
 
   getItemById(id){
-    return this.items.filter(item => item.id === id);
+    return this.db.items.filter(item => item.id === id);
   }
 
+
   updateItem(newValues){
-    let itemIndex = this.items.findIndex(item => item.id == newValues.id);
-    this.items[itemIndex] = newValues;
+    let itemIndex = this.db.items.findIndex(item => item.id == newValues.id);
+    this.db.items[itemIndex] = newValues;   
+    localStorage.setItem(this.storageKey,JSON.stringify(this.db));
   }
 }
